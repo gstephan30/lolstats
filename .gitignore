@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+.httr-oauth
+token.rds
+data/all_games.rds

@@ -1,0 +1,215 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  dpi = 300
+)
+```
+
+# LOL Exploration
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of LOL Exploration is to ...
+
+```{r }
+library(ggplot2)
+library(readr)
+library(lubridate)
+library(dplyr)
+library(forcats)
+library(tidytext)
+library(tidyr)
+library(rdrop2)
+drop_auth()
+theme_set(theme_light())
+
+my_theme <- theme(strip.background =element_rect(fill="#30638e")) +
+  theme(strip.text = element_text(colour = 'white', face = "bold"))
+
+# source: https://github.com/karthik/rdrop2/pull/200/commits/4cbbdceac8f1e544cc5e0918ff695ede228bca2a
+drop_read <- function (file,
+                       dest = tempdir(),
+                       dtoken = rdrop2:::get_dropbox_token(),
+                       ...){
+  localfile = paste0(dest, "/", basename(file))
+  drop_download(file, localfile, overwrite = TRUE, dtoken = dtoken)
+  
+  ext <- strsplit(basename(file), split = "\\.")[[1]][-1]
+  
+  if(ext == "csv") {
+    utils::read.csv(localfile, ...)
+    
+  }else if (ext == "xlsx" | ext == "xls"){
+    
+    readxl::read_excel(localfile, ...)
+    
+  } else if(ext == "rds" ){
+    
+    readRDS(localfile, ...)
+    
+  } else if (ext == "RData" | ext == "rdata" | ext == "RDATA" | ext == "rda") {
+    
+    load(localfile, envir = .GlobalEnv, ...)
+  }
+  
+}
+
+game_data <- drop_read("my_lol/all_games.rds")
+
+game_data %>% 
+  filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>% 
+  mutate(datum = as_date(gameStartTimestamp),
+         datum = floor_date(datum, "week")) %>% 
+  count(summonerName, datum) %>% 
+  ggplot(aes(datum, n, fill = summonerName)) +
+  geom_col() +
+  facet_wrap(~summonerName, ncol = 1) +
+  scale_fill_manual(values = c("#003d5b", "#00798c", "#d1495b", "#edae49", "#f4a261"), guide = "none") +
+  labs(title = "Count of games of selected summoners",
+       x = "Date", 
+       y = "Games") +
+  my_theme
+
+week_order <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+zeit_daten <- game_data %>% 
+  filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>% 
+  select(summonerName, gameStartTimestamp) %>% 
+  mutate(week_day = wday(gameStartTimestamp, abbr = FALSE, label = TRUE),
+         week_day = factor(week_day, week_order, ordered = TRUE),
+         stunde = hour(gameStartTimestamp))
+
+zeit_daten %>% 
+  count(week_day, summonerName) %>% 
+  add_count(summonerName, wt = n, name = "nn") %>% 
+  mutate(perc = n/nn) %>% 
+  ggplot(aes(week_day, perc, fill = summonerName)) +
+  geom_col() +
+  coord_polar() +
+  scale_y_continuous(labels = scales::percent_format()) +
+  facet_wrap(~summonerName) +
+  scale_fill_manual(values = c("#003d5b", "#00798c", "#d1495b", "#edae49", "#f4a261"), guide = "none") +
+  my_theme +
+  labs(title = "What week day do they play most?", 
+       y = NULL, 
+       x = NULL)
+
+zeit_daten %>% 
+  count(stunde, summonerName) %>% 
+  add_count(summonerName, wt = n, name = "nn") %>% 
+  mutate(perc = n/nn) %>% 
+  ggplot(aes(stunde, perc, fill = summonerName)) +
+  geom_col() +
+  coord_polar() +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_fill_manual(values = c("#003d5b", "#00798c", "#d1495b", "#edae49", "#f4a261"), guide = "none") +
+  facet_wrap(~summonerName) +
+  my_theme +
+  labs(title = "What hour do they play most?", 
+       y = NULL, 
+       x = NULL)
+
+game_data %>% 
+  filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>% 
+  count(summonerName, championName, sort = TRUE) %>% 
+  filter(n > 2) %>% 
+  ggplot(aes(n, reorder_within(championName, n, summonerName), fill = summonerName)) +
+  geom_col() +
+  facet_wrap(~summonerName, scales = "free_y") +
+  scale_y_reordered() +
+  scale_fill_manual(values = c("#003d5b", "#00798c", "#d1495b", "#edae49", "#f4a261"), guide = "none") +
+  labs(title = "Count of used Champions of selected summoners",
+       subtitle = "Played at least three times",
+       x = "Games",
+       y = NULL) +
+  my_theme
+
+game_data %>% 
+  filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>% 
+  count(summonerName, win, championName) %>% 
+  pivot_wider(names_from = win, 
+              values_from = n, 
+              values_fill = 0) %>% 
+  janitor::clean_names() %>% 
+  mutate(total = false+true, 
+         win_perc = true/total) %>% 
+  filter(total >= 10) %>% 
+  arrange(desc(win_perc)) %>% 
+  ggplot(aes(win_perc, fct_reorder(champion_name, win_perc), fill = summoner_name)) +
+  geom_col(position = "dodge") +
+  geom_vline(xintercept = 0.5, linetype = "dashed") +
+  scale_fill_manual(values = c("#003d5b", "#00798c", "#d1495b", "#edae49", "#f4a261")) +
+  scale_x_continuous(labels = scales::percent_format()) +
+  labs(title = "Win percent per Summoner per Champion",
+       x = "Wins in %",
+       y = NULL, 
+       caption = "played at least 10 times",
+       fill = "Summoner")
+
+game_data %>% 
+  filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>% 
+  count(summonerName, win, lane) %>% 
+  pivot_wider(names_from = win, 
+              values_from = n, 
+              values_fill = 0) %>% 
+  janitor::clean_names() %>% 
+  mutate(total = false+true, 
+         win_perc = true/total) %>% 
+  #filter(total > 2) %>% 
+  arrange(desc(win_perc)) %>% 
+  ggplot(aes(win_perc, reorder_within(summoner_name, win_perc, lane), 
+             fill = summoner_name,
+             label = paste0(total, " games"))) +
+  geom_col() +
+  geom_text(hjust = -0.1) +
+  facet_wrap(~lane, scales = "free_y") +
+  scale_y_reordered() +
+  geom_vline(xintercept = 0.5, linetype = "dashed") +
+  scale_fill_manual(values = c("#003d5b", "#00798c", "#d1495b", "#edae49", "#f4a261"), guide = "none") +
+  scale_x_continuous(labels = scales::percent_format(), limits = c(0, 1)) +
+  labs(title = "Win percent per Summoner per Lane",
+       x = "Wins in %",
+       y = NULL, 
+       fill = "Summoner") +
+  my_theme
+
+
+
+box_data <- game_data %>% 
+  filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>% 
+  mutate(
+    deaths_new = ifelse(deaths == 0, 1, deaths),
+    kda = ceiling((kills+assists)/(deaths_new))) %>% 
+  select(summonerName, kills, assists, deaths, deaths_new, kda) %>% 
+  arrange(desc(kda)) %>% 
+  group_by(summonerName) %>% 
+  mutate(kda_mean = mean(kda), 
+         n = n(),
+         upper = quantile(kda, 0.95),
+         lower = quantile(kda, 0.05),
+         outlier = ifelse(upper < kda, 1, 0))
+
+box_data %>% 
+  ggplot(aes(kda, fct_reorder(summonerName, kda), fill = summonerName)) +
+  geom_violin(alpha = 0.6) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, alpha = 0.8) +
+  geom_jitter(
+    data = box_data %>% 
+      filter(outlier == 1), height = 0.1, color = "red", alpha = 0.4) +
+  scale_fill_manual(values = c("#003d5b", "#00798c", "#d1495b", "#edae49", "#f4a261"), guide = "none") +
+  labs(title = "KDA Ratio by Summoner", 
+       y = NULL, 
+       x = "KDA") 
+  
+
+```
