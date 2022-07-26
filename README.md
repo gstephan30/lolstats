@@ -34,16 +34,19 @@ win
 kills
 </th>
 <th style="text-align:right;">
+assists
+</th>
+<th style="text-align:right;">
 deaths
 </th>
 <th style="text-align:right;">
-assists
+kda
 </th>
 </tr>
 </thead>
 <tbody>
 <tr grouplength="5">
-<td colspan="8" style="border-bottom: 1px solid;">
+<td colspan="9" style="border-bottom: 1px solid;">
 <strong>BigFish84</strong>
 </td>
 </tr>
@@ -73,6 +76,9 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 <td style="text-align:right;">
 12
 </td>
+<td style="text-align:right;">
+1.1
+</td>
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
@@ -95,10 +101,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 3
 </td>
 <td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
 2
 </td>
 <td style="text-align:right;">
-4
+3.5
 </td>
 </tr>
 <tr>
@@ -122,10 +131,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 2
 </td>
 <td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
 9
 </td>
 <td style="text-align:right;">
-8
+1.1
 </td>
 </tr>
 <tr>
@@ -149,10 +161,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 5
 </td>
 <td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
 8
 </td>
 <td style="text-align:right;">
-14
+2.4
 </td>
 </tr>
 <tr>
@@ -176,14 +191,17 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 1
 </td>
 <td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
 10
 </td>
 <td style="text-align:right;">
-8
+0.9
 </td>
 </tr>
 <tr grouplength="5">
-<td colspan="8" style="border-bottom: 1px solid;">
+<td colspan="9" style="border-bottom: 1px solid;">
 <strong>Blua</strong>
 </td>
 </tr>
@@ -208,10 +226,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 1
 </td>
 <td style="text-align:right;">
+26
+</td>
+<td style="text-align:right;">
 7
 </td>
 <td style="text-align:right;">
-26
+3.9
 </td>
 </tr>
 <tr>
@@ -235,10 +256,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 1
 </td>
 <td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
 2
 </td>
 <td style="text-align:right;">
-11
+6.0
 </td>
 </tr>
 <tr>
@@ -262,10 +286,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 0
 </td>
 <td style="text-align:right;">
+13
+</td>
+<td style="text-align:right;">
 2
 </td>
 <td style="text-align:right;">
-13
+6.5
 </td>
 </tr>
 <tr>
@@ -289,10 +316,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 0
 </td>
 <td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
 4
 </td>
 <td style="text-align:right;">
-2
+0.5
 </td>
 </tr>
 <tr>
@@ -316,14 +346,17 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 0
 </td>
 <td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
 6
 </td>
 <td style="text-align:right;">
-14
+2.3
 </td>
 </tr>
 <tr grouplength="5">
-<td colspan="8" style="border-bottom: 1px solid;">
+<td colspan="9" style="border-bottom: 1px solid;">
 <strong>Jocar</strong>
 </td>
 </tr>
@@ -348,10 +381,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 10
 </td>
 <td style="text-align:right;">
+28
+</td>
+<td style="text-align:right;">
 8
 </td>
 <td style="text-align:right;">
-28
+4.8
 </td>
 </tr>
 <tr>
@@ -375,10 +411,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 6
 </td>
 <td style="text-align:right;">
+33
+</td>
+<td style="text-align:right;">
 5
 </td>
 <td style="text-align:right;">
-33
+7.8
 </td>
 </tr>
 <tr>
@@ -402,10 +441,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 2
 </td>
 <td style="text-align:right;">
+23
+</td>
+<td style="text-align:right;">
 13
 </td>
 <td style="text-align:right;">
-23
+1.9
 </td>
 </tr>
 <tr>
@@ -429,10 +471,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 6
 </td>
 <td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
 4
 </td>
 <td style="text-align:right;">
-3
+2.2
 </td>
 </tr>
 <tr>
@@ -456,14 +501,17 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 6
 </td>
 <td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
 1
 </td>
 <td style="text-align:right;">
-12
+18.0
 </td>
 </tr>
 <tr grouplength="5">
-<td colspan="8" style="border-bottom: 1px solid;">
+<td colspan="9" style="border-bottom: 1px solid;">
 <strong>locked</strong>
 </td>
 </tr>
@@ -488,10 +536,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 1
 </td>
 <td style="text-align:right;">
+22
+</td>
+<td style="text-align:right;">
 3
 </td>
 <td style="text-align:right;">
-22
+7.7
 </td>
 </tr>
 <tr>
@@ -515,10 +566,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 1
 </td>
 <td style="text-align:right;">
+19
+</td>
+<td style="text-align:right;">
 10
 </td>
 <td style="text-align:right;">
-19
+2.0
 </td>
 </tr>
 <tr>
@@ -542,10 +596,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 2
 </td>
 <td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
 3
 </td>
 <td style="text-align:right;">
-12
+4.7
 </td>
 </tr>
 <tr>
@@ -569,10 +626,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 0
 </td>
 <td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
 5
 </td>
 <td style="text-align:right;">
-20
+4.0
 </td>
 </tr>
 <tr>
@@ -596,14 +656,17 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 16
 </td>
 <td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
 6
 </td>
 <td style="text-align:right;">
-17
+5.5
 </td>
 </tr>
 <tr grouplength="5">
-<td colspan="8" style="border-bottom: 1px solid;">
+<td colspan="9" style="border-bottom: 1px solid;">
 <strong>Paintrain100</strong>
 </td>
 </tr>
@@ -628,10 +691,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 13
 </td>
 <td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
 7
 </td>
 <td style="text-align:right;">
-11
+3.4
 </td>
 </tr>
 <tr>
@@ -655,10 +721,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 0
 </td>
 <td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
 0
 </td>
 <td style="text-align:right;">
-4
+4.0
 </td>
 </tr>
 <tr>
@@ -687,6 +756,9 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 <td style="text-align:right;">
 6
 </td>
+<td style="text-align:right;">
+1.3
+</td>
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
@@ -709,10 +781,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 13
 </td>
 <td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
 7
 </td>
 <td style="text-align:right;">
-12
+3.6
 </td>
 </tr>
 <tr>
@@ -736,10 +811,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 9
 </td>
 <td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
 7
 </td>
 <td style="text-align:right;">
-11
+2.9
 </td>
 </tr>
 </tbody>
