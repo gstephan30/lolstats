@@ -328,3 +328,29 @@ game_data %>%
   select(summonerName, teamPosition, role, individualPosition, lane, championName) %>% 
   count(teamPosition, role, individualPosition, lane, championName, sort = TRUE) %>% filter(championName == "Warwick")
 
+library(ggplot2)
+game_data %>% 
+  select(summonerName, gameStartTimestamp,contains("level")) %>% 
+  filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>% 
+  mutate(datum = lubridate::as_date(gameStartTimestamp)) %>% 
+  select(summonerName, datum, summonerLevel) %>% 
+  arrange(summonerName, datum, summonerLevel) %>% 
+  distinct() %>% 
+  
+  group_by(summonerName, datum) %>% 
+  filter(summonerLevel == min(summonerLevel)) %>% 
+  group_by(summonerName) %>% 
+  mutate(tag = 1:n()) %>% 
+  ggplot(aes(tag, summonerLevel, group = summonerName, color = summonerName)) +
+  geom_line() +
+  theme_light() +
+  geom_smooth(method = "lm")
+  
+  mutate()
+  
+  mutate(test = n_distinct(datum))
+  mutate(tag = n()) %>% 
+  ungroup() %>% 
+  select(-datum) %>% 
+  group_by(summonerName, tag) %>% 
+  filter(summonerLevel == min(summonerLevel))

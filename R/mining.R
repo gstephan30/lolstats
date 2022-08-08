@@ -8,7 +8,7 @@ library(rdrop2)
 drop_auth()
 
 key <- Sys.getenv("api_key")
-
+source("R/update_ranks.R")
 get_summoner_data <- function(name) {
   
   json_url <- paste0("https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/", name, "?api_key=", key)
