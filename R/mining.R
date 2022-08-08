@@ -81,8 +81,7 @@ drop_read <- function (file,
   }
   
 }
-
-game_file <- drop_read("my_lol/all_games.rds") %>% 
+game_file <- readr::read_rds("data/all_games.rds") %>% 
   mutate(game_id = paste0(platformId, "_", gameId))
 
 new_games <- game_ids %>% 

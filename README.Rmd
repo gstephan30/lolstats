@@ -31,46 +31,46 @@ library(dplyr)
 library(forcats)
 library(tidytext)
 library(tidyr)
-library(rdrop2)
+# library(rdrop2)
 library(kableExtra)
-drop_auth()
+# drop_auth()
 theme_set(theme_light())
 
 my_theme <- theme(strip.background =element_rect(fill="#30638e")) +
   theme(strip.text = element_text(colour = 'white', face = "bold"))
 
-# source: https://github.com/karthik/rdrop2/pull/200/commits/4cbbdceac8f1e544cc5e0918ff695ede228bca2a
-drop_read <- function (file,
-                       dest = tempdir(),
-                       dtoken = rdrop2:::get_dropbox_token(),
-                       ...){
-  localfile = paste0(dest, "/", basename(file))
-  drop_download(file, localfile, overwrite = TRUE, dtoken = dtoken)
-  
-  ext <- strsplit(basename(file), split = "\\.")[[1]][-1]
-  
-  if(ext == "csv") {
-    utils::read.csv(localfile, ...)
-    
-  }else if (ext == "xlsx" | ext == "xls"){
-    
-    readxl::read_excel(localfile, ...)
-    
-  } else if(ext == "rds" ){
-    
-    readRDS(localfile, ...)
-    
-  } else if (ext == "RData" | ext == "rdata" | ext == "RDATA" | ext == "rda") {
-    
-    load(localfile, envir = .GlobalEnv, ...)
-  }
-  
-}
+# # source: https://github.com/karthik/rdrop2/pull/200/commits/4cbbdceac8f1e544cc5e0918ff695ede228bca2a
+# drop_read <- function (file,
+#                        dest = tempdir(),
+#                        dtoken = rdrop2:::get_dropbox_token(),
+#                        ...){
+#   localfile = paste0(dest, "/", basename(file))
+#   drop_download(file, localfile, overwrite = TRUE, dtoken = dtoken)
+#   
+#   ext <- strsplit(basename(file), split = "\\.")[[1]][-1]
+#   
+#   if(ext == "csv") {
+#     utils::read.csv(localfile, ...)
+#     
+#   }else if (ext == "xlsx" | ext == "xls"){
+#     
+#     readxl::read_excel(localfile, ...)
+#     
+#   } else if(ext == "rds" ){
+#     
+#     readRDS(localfile, ...)
+#     
+#   } else if (ext == "RData" | ext == "rdata" | ext == "RDATA" | ext == "rda") {
+#     
+#     load(localfile, envir = .GlobalEnv, ...)
+#   }
+#   
+# }
+# 
+# game_data <- drop_read("my_lol/all_games.rds")
 
-game_data <- drop_read("my_lol/all_games.rds")
 
-
-
+game_data <- readr::read_rds("data/all_games.rds")
 
 game_data %>% 
   filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>% 
@@ -163,7 +163,7 @@ game_data %>%
 
 game_data %>% 
   filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>% 
-  count(summonerName, win, lane) %>% 
+  count(summonerName, win, role) %>% 
   pivot_wider(names_from = win, 
               values_from = n, 
               values_fill = 0) %>% 
@@ -172,12 +172,12 @@ game_data %>%
          win_perc = true/total) %>% 
   #filter(total > 2) %>% 
   arrange(desc(win_perc)) %>% 
-  ggplot(aes(win_perc, reorder_within(summoner_name, win_perc, lane), 
+  ggplot(aes(win_perc, reorder_within(summoner_name, win_perc, role), 
              fill = summoner_name,
              label = paste0(total, " games"))) +
   geom_col() +
   geom_text(hjust = -0.1) +
-  facet_wrap(~lane, scales = "free_y") +
+  facet_wrap(~role, scales = "free_y") +
   scale_y_reordered() +
   geom_vline(xintercept = 0.5, linetype = "dashed") +
   scale_fill_manual(values = c("#003d5b", "#00798c", "#d1495b", "#edae49", "#f4a261"), guide = "none") +

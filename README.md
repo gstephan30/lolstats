@@ -210,149 +210,149 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 CLASSIC
 </td>
 <td style="text-align:left;">
-2022-07-24 20:46:55
+2022-08-08 07:48:08
 </td>
 <td style="text-align:left;">
 Blua
 </td>
 <td style="text-align:left;">
-Janna
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-26
-</td>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:right;">
-3.9
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-CLASSIC
-</td>
-<td style="text-align:left;">
-2022-07-24 20:00:25
-</td>
-<td style="text-align:left;">
-Blua
-</td>
-<td style="text-align:left;">
-Janna
+Zyra
 </td>
 <td style="text-align:left;">
 <span
 style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
 </td>
 <td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-11
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-6.0
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-CLASSIC
-</td>
-<td style="text-align:left;">
-2022-07-24 19:28:23
-</td>
-<td style="text-align:left;">
-Blua
-</td>
-<td style="text-align:left;">
-Janna
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-13
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-6.5
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-CLASSIC
-</td>
-<td style="text-align:left;">
-2022-07-24 17:42:28
-</td>
-<td style="text-align:left;">
-Blua
-</td>
-<td style="text-align:left;">
-Janna
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-0.5
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-CLASSIC
-</td>
-<td style="text-align:left;">
-2022-07-24 16:38:21
-</td>
-<td style="text-align:left;">
-Blua
-</td>
-<td style="text-align:left;">
-Janna
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
-</td>
-<td style="text-align:right;">
-0
+8
 </td>
 <td style="text-align:right;">
 14
 </td>
 <td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+3.1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+CLASSIC
+</td>
+<td style="text-align:left;">
+2022-08-07 18:09:24
+</td>
+<td style="text-align:left;">
+Blua
+</td>
+<td style="text-align:left;">
+Zyra
+</td>
+<td style="text-align:left;">
+<span
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
 6
 </td>
 <td style="text-align:right;">
-2.3
+7
+</td>
+<td style="text-align:right;">
+1.4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+CLASSIC
+</td>
+<td style="text-align:left;">
+2022-08-07 17:28:13
+</td>
+<td style="text-align:left;">
+Blua
+</td>
+<td style="text-align:left;">
+Zyra
+</td>
+<td style="text-align:left;">
+<span
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+5.7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+CLASSIC
+</td>
+<td style="text-align:left;">
+2022-08-07 16:29:21
+</td>
+<td style="text-align:left;">
+Blua
+</td>
+<td style="text-align:left;">
+Zyra
+</td>
+<td style="text-align:left;">
+<span
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+0.8
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+CLASSIC
+</td>
+<td style="text-align:left;">
+2022-08-07 15:43:52
+</td>
+<td style="text-align:left;">
+Blua
+</td>
+<td style="text-align:left;">
+Zyra
+</td>
+<td style="text-align:left;">
+<span
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+1.0
 </td>
 </tr>
 <tr grouplength="5">
@@ -365,29 +365,29 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 ARAM
 </td>
 <td style="text-align:left;">
-2022-07-24 00:41:02
+2022-08-07 22:12:19
 </td>
 <td style="text-align:left;">
 Jocar
 </td>
 <td style="text-align:left;">
-Ashe
+DrMundo
 </td>
 <td style="text-align:left;">
 <span
 style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+26
 </td>
 <td style="text-align:right;">
 10
 </td>
 <td style="text-align:right;">
-28
-</td>
-<td style="text-align:right;">
-8
-</td>
-<td style="text-align:right;">
-4.8
+4.3
 </td>
 </tr>
 <tr>
@@ -395,59 +395,29 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 ARAM
 </td>
 <td style="text-align:left;">
-2022-07-24 00:15:50
+2022-08-07 21:45:24
 </td>
 <td style="text-align:left;">
 Jocar
 </td>
 <td style="text-align:left;">
-Varus
+Warwick
 </td>
 <td style="text-align:left;">
 <span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
 </td>
 <td style="text-align:right;">
-6
+14
 </td>
 <td style="text-align:right;">
-33
+10
 </td>
 <td style="text-align:right;">
-5
+14
 </td>
 <td style="text-align:right;">
-7.8
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ARAM
-</td>
-<td style="text-align:left;">
-2022-07-23 23:49:17
-</td>
-<td style="text-align:left;">
-Jocar
-</td>
-<td style="text-align:left;">
-Blitzcrank
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-23
-</td>
-<td style="text-align:right;">
-13
-</td>
-<td style="text-align:right;">
-1.9
+1.7
 </td>
 </tr>
 <tr>
@@ -455,29 +425,29 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 CLASSIC
 </td>
 <td style="text-align:left;">
-2022-07-23 23:20:36
+2022-08-07 21:12:51
 </td>
 <td style="text-align:left;">
 Jocar
 </td>
 <td style="text-align:left;">
-Volibear
+Lux
 </td>
 <td style="text-align:left;">
 <span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
+</td>
+<td style="text-align:right;">
+0
 </td>
 <td style="text-align:right;">
 6
 </td>
 <td style="text-align:right;">
-3
+7
 </td>
 <td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-2.2
+0.9
 </td>
 </tr>
 <tr>
@@ -485,7 +455,7 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 CLASSIC
 </td>
 <td style="text-align:left;">
-2022-07-23 15:08:43
+2022-08-07 20:34:07
 </td>
 <td style="text-align:left;">
 Jocar
@@ -498,16 +468,46 @@ Lux
 style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
 </td>
 <td style="text-align:right;">
-6
+3
 </td>
 <td style="text-align:right;">
-12
+13
 </td>
 <td style="text-align:right;">
-1
+2
 </td>
 <td style="text-align:right;">
-18.0
+8.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+CLASSIC
+</td>
+<td style="text-align:left;">
+2022-08-07 14:52:27
+</td>
+<td style="text-align:left;">
+Jocar
+</td>
+<td style="text-align:left;">
+Brand
+</td>
+<td style="text-align:left;">
+<span
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+5.0
 </td>
 </tr>
 <tr grouplength="5">

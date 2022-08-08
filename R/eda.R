@@ -225,3 +225,106 @@ game_data <- paste0("https://europe.api.riotgames.com/lol/match/v5/matches/EUW1_
 
 
 all_game_data <- map_df(game_ids, function(x) get_game_data(x, key))
+
+library(jsonlite)
+library(dplyr)
+library(tidyr)
+queue_json <- "https://static.developer.riotgames.com/docs/lol/queues.json" %>% 
+  jsonlite::fromJSON(simplifyVector = FALSE) %>% 
+  tibble(key = names(.),
+         value = .) %>% 
+  unnest_wider(value)
+
+game_data %>% 
+  filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>% 
+  select(summonerName, gameStartTimestamp, win, queueId, championName) %>% 
+  left_join(queue_json) %>% 
+  count(summonerName, description, sort = TRUE)
+  
+game_data %>% 
+  count(summonerName, sort = TRUE)
+
+library(ggplot2)
+game_data %>% 
+  select(gameId, summonerName) %>% 
+  widyr::pairwise_count(summonerName, gameId, sort = TRUE, upper = FALSE) %>% 
+  filter(n > 1) %>% 
+  igraph::graph_from_data_frame() %>% 
+  ggraph::ggraph(layout = "fr") +
+  ggraph::geom_edge_link() +
+  ggraph::geom_node_point() +
+  ggraph::geom_node_text(aes(label = name), vjust = 1, hjust = 1, repel = TRUE)
+
+
+game_data %>% 
+  filter(summonerName == "MissFortune")
+
+cum_data <- game_data %>% 
+  filter(summonerName == "Jocar") %>% 
+  filter(queueId %in% c(420, 430)) %>% 
+  arrange(desc(gameStartTimestamp)) %>%
+  select(win, queueId) %>% 
+  group_by(queueId) %>% 
+  mutate(test = cumsum(win),
+         id = 1:n(),
+         perc = test/id) 
+
+cum_data %>% 
+  ggplot(aes(id, test)) +
+  geom_col() +
+  facet_wrap(~queueId, ncol = 1, scales = "free_x")
+
+cum_data %>% 
+  left_join(
+    queue_json
+  ) %>% 
+  ggplot(aes(id, perc)) +
+  geom_line() +
+  geom_hline(yintercept = 0.5, linetype = "dashed") +
+  facet_wrap(~description, ncol = 1, scales = "free_x") +
+  theme_light()
+
+game_data %>%
+  select_if(is.list) %>% 
+  sample_n(10) %>% 
+  unnest_wider(challenges) %>% 
+  glimpse()
+
+game_data %>%
+  select_if(is.list) %>% 
+  select(perks) %>% 
+  sample_n(10) %>% 
+  mutate(game_id = 1:n()) %>% 
+  unnest_wider(perks) %>% 
+  unnest_wider(statPerks) %>% 
+  unnest(styles) %>% 
+  unnest_wider(styles) %>% 
+  unnest(selections) %>% 
+  unnest_wider(selections)
+
+
+game_data %>%
+  sample_n(10) %>% 
+  select(championId, teams) %>% 
+  unnest(teams) %>% 
+  unnest_wider(teams) %>% 
+  unnest(bans) %>% 
+  unnest_wider(bans, names_sep = "_") %>% 
+  unnest_wider(objectives) %>% 
+  unnest_wider(baron, names_sep = "_") %>% 
+  unnest_wider(champion, names_sep = "_")
+
+game_data %>% 
+  filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>%
+  count(summonerName, role, sort = TRUE) %>% 
+  ggplot(aes(n, role)) +
+  geom_col() +
+  facet_wrap(~summonerName, nrow = 1, scales = "free_x")
+
+game_data %>% 
+  filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>%
+  filter(gameMode == "CLASSIC") %>% filter(role == "NONE") %>% select(championName, summonerName, lane, role)
+  filter(summonerName == "Jocar") %>% 
+  select(summonerName, teamPosition, role, individualPosition, lane, championName) %>% 
+  count(teamPosition, role, individualPosition, lane, championName, sort = TRUE) %>% filter(championName == "Warwick")
+
