@@ -7,7 +7,7 @@ library(tidytext)
 library(tidyr)
 theme_set(theme_light())
 
-game_data <- read_rds("data/20220504_games.rds")
+game_data <- read_rds("data/all_games.rds")
 
 game_data %>% 
   filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked")) %>% 
@@ -328,9 +328,9 @@ game_data %>%
   select(summonerName, teamPosition, role, individualPosition, lane, championName) %>% 
   count(teamPosition, role, individualPosition, lane, championName, sort = TRUE) %>% filter(championName == "Warwick")
 
-library(ggplot2)
-game_data %>% 
-  select(summonerName, gameStartTimestamp,contains("level")) %>% 
+
+g_days <- game_data %>% 
+  select(summonerName, gameStartTimestamp, contains("level")) %>% 
   filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>% 
   mutate(datum = lubridate::as_date(gameStartTimestamp)) %>% 
   select(summonerName, datum, summonerLevel) %>% 
@@ -344,13 +344,57 @@ game_data %>%
   ggplot(aes(tag, summonerLevel, group = summonerName, color = summonerName)) +
   geom_line() +
   theme_light() +
-  geom_smooth(method = "lm")
+  geom_smooth(method = "lm") +
+  scale_color_manual(values = c("#003d5b", "#00798c", "#d1495b", "#edae49", "#f4a261")) +
+  labs(title = "Level per Days played",
+       x = "Days played",
+       y = "Summoner Level", 
+       color = "Summoner")
   
-  mutate()
-  
-  mutate(test = n_distinct(datum))
-  mutate(tag = n()) %>% 
+
+g_games <- game_data %>% 
+  select(summonerName, gameStartTimestamp, gameId, summonerLevel) %>% 
+  filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>% 
+  arrange(summonerName, gameStartTimestamp, summonerLevel) %>% 
+  group_by(summonerName) %>% 
+  mutate(game = 1:n()) %>% 
   ungroup() %>% 
-  select(-datum) %>% 
-  group_by(summonerName, tag) %>% 
-  filter(summonerLevel == min(summonerLevel))
+  select(summonerName, game, summonerLevel) %>% 
+  arrange(summonerName, game, summonerLevel) %>% 
+  distinct() %>% 
+  
+  ggplot(aes(game, summonerLevel, group = summonerName, color = summonerName)) +
+  geom_line() +
+  theme_light() +
+  geom_smooth(method = "lm") +
+  scale_color_manual(values = c("#003d5b", "#00798c", "#d1495b", "#edae49", "#f4a261")) +
+  labs(title = "Level per Games played",
+       x = "Games played",
+       y = "Summoner Level", 
+       color = "Summoner")
+
+library(patchwork)
+g_days + g_games + 
+  plot_layout(guides = "collect") &
+  theme(legend.position='bottom')
+
+
+
+game_data %>% 
+  filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>% 
+  select(gameId, summonerName, role, gameDuration, contains("total"), contains("turrent")) %>% 
+  pivot_longer(cols = -c("gameId", "summonerName", "role", "gameDuration"), 
+               names_to = "key", 
+               values_to = "value") %>% 
+  group_by(summonerName, key) %>% 
+  summarise(total = sum(value), 
+            games = n(),
+            value_per_game = total/games) %>% 
+  ggplot(aes(value_per_game, summonerName)) +
+  geom_col() +
+  facet_wrap(~key, scales = "free_x")
+
+game_data %>% 
+  select(gameMode, summonerName, pentaKills, quadraKills, championName, gameStartTimestamp) %>% 
+  filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>% 
+  filter(pentaKills > 0 | quadraKills > 0)

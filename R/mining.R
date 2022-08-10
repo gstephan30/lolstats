@@ -4,8 +4,6 @@ library(jsonlite)
 library(tidyr)
 library(purrr)
 library(readr)
-library(rdrop2)
-drop_auth()
 
 key <- Sys.getenv("api_key")
 source("R/update_ranks.R")
@@ -55,32 +53,32 @@ game_ids <- tibble(
   mutate(game_ids = map(puuids, get_game_ids))
 
 # source: https://github.com/karthik/rdrop2/pull/200/commits/4cbbdceac8f1e544cc5e0918ff695ede228bca2a
-drop_read <- function (file,
-                       dest = tempdir(),
-                       dtoken = rdrop2:::get_dropbox_token(),
-                       ...){
-  localfile = paste0(dest, "/", basename(file))
-  drop_download(file, localfile, overwrite = TRUE, dtoken = dtoken)
-  
-  ext <- strsplit(basename(file), split = "\\.")[[1]][-1]
-  
-  if(ext == "csv") {
-    utils::read.csv(localfile, ...)
-    
-  }else if (ext == "xlsx" | ext == "xls"){
-    
-    readxl::read_excel(localfile, ...)
-    
-  } else if(ext == "rds" ){
-    
-    readRDS(localfile, ...)
-    
-  } else if (ext == "RData" | ext == "rdata" | ext == "RDATA" | ext == "rda") {
-    
-    load(localfile, envir = .GlobalEnv, ...)
-  }
-  
-}
+# drop_read <- function (file,
+#                        dest = tempdir(),
+#                        dtoken = rdrop2:::get_dropbox_token(),
+#                        ...){
+#   localfile = paste0(dest, "/", basename(file))
+#   drop_download(file, localfile, overwrite = TRUE, dtoken = dtoken)
+#   
+#   ext <- strsplit(basename(file), split = "\\.")[[1]][-1]
+#   
+#   if(ext == "csv") {
+#     utils::read.csv(localfile, ...)
+#     
+#   }else if (ext == "xlsx" | ext == "xls"){
+#     
+#     readxl::read_excel(localfile, ...)
+#     
+#   } else if(ext == "rds" ){
+#     
+#     readRDS(localfile, ...)
+#     
+#   } else if (ext == "RData" | ext == "rdata" | ext == "RDATA" | ext == "rda") {
+#     
+#     load(localfile, envir = .GlobalEnv, ...)
+#   }
+#   
+# }
 game_file <- readr::read_rds("data/all_games.rds") %>% 
   mutate(game_id = paste0(platformId, "_", gameId))
 
@@ -121,11 +119,16 @@ steps <- 100
 print(paste0("Process will take: ", ((seq(1, length(new_games), steps) %>% length() - 1) * 135 / 60), " minutes."))
 all_game_data <- NULL
 for (i in seq(1, length(new_games), steps)) {
-  Sys.sleep(30)
+  print("Starting in 30 sec ...")
+  # Sys.sleep(30)
   
   while ((i %% steps) != 0) {
-    all_game_data[[i]] <- get_game_data(new_games[i], key)
-    i <- i + 1
+    if (!is.na(new_games[i])) {
+      all_game_data[[i]] <- get_game_data(new_games[i], key)
+      i <- i + 1  
+    } else {
+      stop("Finished.")
+    }
   }
   
   print("Schlafe 2min")
@@ -139,5 +142,6 @@ file_name <- paste0("data/all_games.rds")
 all_game_data %>% 
   bind_rows() %>% 
   bind_rows(game_file) %>% 
+  distinct() %>% 
   write_rds(., file = file_name)
-drop_upload("data/all_games.rds", path = "my_lol")
+# drop_upload("data/all_games.rds", path = "my_lol")

@@ -2,6 +2,7 @@ library(jsonlite)
 library(dplyr)
 library(ggplot2)
 library(tidytext)
+library(tidyr)
 
 champs_json <- "http://ddragon.leagueoflegends.com/cdn/12.8.1/data/en_US/champion.json" %>% 
   fromJSON(simplifyVector = FALSE)

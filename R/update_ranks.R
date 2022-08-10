@@ -39,20 +39,21 @@ update_ranks <- function() {
       key = names(fromJSON(json_url, simplifyVector = FALSE)),
       json = fromJSON(json_url, simplifyVector = FALSE)
     ) %>% 
-      unnest_wider(json) %>% 
-      mutate(time = now())
+      unnest_wider(json) 
   }
   
-  
   info <- summoner %>% 
+    mutate(time = now()) %>% 
     mutate(info = map(name, get_summoner_data)) %>% 
     unnest_wider(info, names_sep = "_") %>% 
     mutate(rank = map(info_id, get_current_rank)) %>% 
     unnest_wider(rank) %>% 
-    select(time, everything())
+    select(time, everything(), -name, -info_name)
   
   print("Updating ...")
-  saveRDS(info, "data/current_ranks.rds")
+  read_rds("data/current_ranks.rds") %>% 
+    bind_rows(info) %>% 
+    disitnct() %>% 
+    saveRDS("data/current_ranks.rds")
 }
 update_ranks()
-

@@ -33,6 +33,7 @@ library(tidytext)
 library(tidyr)
 # library(rdrop2)
 library(kableExtra)
+library(patchwork)
 # drop_auth()
 theme_set(theme_light())
 
@@ -240,5 +241,55 @@ game_data %>%
   select(-deaths_new) %>% 
   knitr::kable(escape = FALSE, caption = "Last 5 games per Summoner") %>% 
   pack_rows(index = c("BigFish84" = 5, "Blua" = 5, "Jocar" = 5, "locked" = 5, "Paintrain100" = 5))
+
+g_days <- game_data %>% 
+  select(summonerName, gameStartTimestamp, contains("level")) %>% 
+  filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>% 
+  mutate(datum = lubridate::as_date(gameStartTimestamp)) %>% 
+  select(summonerName, datum, summonerLevel) %>% 
+  arrange(summonerName, datum, summonerLevel) %>% 
+  distinct() %>% 
+  
+  group_by(summonerName, datum) %>% 
+  filter(summonerLevel == min(summonerLevel)) %>% 
+  group_by(summonerName) %>% 
+  mutate(tag = 1:n()) %>% 
+  ggplot(aes(tag, summonerLevel, group = summonerName, color = summonerName)) +
+  geom_line() +
+  theme_light() +
+  geom_smooth(method = "lm") +
+  scale_color_manual(values = c("#003d5b", "#00798c", "#d1495b", "#edae49", "#f4a261")) +
+  labs(title = "Level per Days played",
+       x = "Days played",
+       y = "Summoner Level", 
+       color = "Summoner")
+  
+
+g_games <- game_data %>% 
+  select(summonerName, gameStartTimestamp, gameId, summonerLevel) %>% 
+  filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>% 
+  arrange(summonerName, gameStartTimestamp, summonerLevel) %>% 
+  group_by(summonerName) %>% 
+  mutate(game = 1:n()) %>% 
+  ungroup() %>% 
+  select(summonerName, game, summonerLevel) %>% 
+  arrange(summonerName, game, summonerLevel) %>% 
+  distinct() %>% 
+  
+  ggplot(aes(game, summonerLevel, group = summonerName, color = summonerName)) +
+  geom_line() +
+  theme_light() +
+  geom_smooth(method = "lm") +
+  scale_color_manual(values = c("#003d5b", "#00798c", "#d1495b", "#edae49", "#f4a261")) +
+  labs(title = "Level per Games played",
+       x = "Games played",
+       y = "Summoner Level", 
+       color = "Summoner")
+
+
+g_days + g_games + 
+  plot_layout(guides = "collect") &
+  theme(legend.position='bottom')
+
 
 ```
