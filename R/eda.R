@@ -398,3 +398,42 @@ game_data %>%
   select(gameMode, summonerName, pentaKills, quadraKills, championName, gameStartTimestamp) %>% 
   filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>% 
   filter(pentaKills > 0 | quadraKills > 0)
+
+
+read_rds("data/current_ranks.rds")
+read_rds("data/all_games.rds") %>% select(gameStartTimestamp, gameVersion) %>% 
+  filter(gameStartTimestamp == max(gameStartTimestamp)) %>% 
+  distinct(gameVersion) %>% 
+  pull()
+
+
+"https://ddragon.leagueoflegends.com/cdn/12.14.1/data/en_US/profileicon.json" %>% 
+  jsonlite::fromJSON(simplifyVector = FALSE) %>% 
+  tibble(key = names(.),
+         values = .) %>% 
+  filter(key == "data") %>% 
+  unnest(values) %>% 
+  unnest_wider(values) %>% 
+  unnest_wider(id)
+
+
+"https://cdn.merakianalytics.com/riot/lol/resources/latest/en-US/championrates.json" %>% 
+  fromJSON(simplifyVector = FALSE) %>% 
+  tibble(key = names(.), 
+         data = .) %>% 
+  filter(key == "data") %>% 
+  unnest(data) %>% 
+  unnest_wider(data) %>% 
+  unnest_wider(TOP, names_sep = "_") %>% 
+  unnest_wider(JUNGLE, names_sep = "_") %>% 
+  unnest_wider(MIDDLE, names_sep = "_") %>% 
+  unnest_wider(BOTTOM, names_sep = "_") %>% 
+  unnest_wider(UTILITY, names_sep = "_") 
+
+
+"https://cdn.merakianalytics.com/riot/lol/resources/latest/en-US/championrates.json" %>% 
+  fromJSON(simplifyVector = FALSE) %>% 
+  tibble(key = names(.), 
+         data = .) %>% 
+  filter(key == "patch") %>% 
+  unnest(data)

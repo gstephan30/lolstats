@@ -53,7 +53,7 @@ update_ranks <- function() {
   print("Updating ...")
   read_rds("data/current_ranks.rds") %>% 
     bind_rows(info) %>% 
-    disitnct() %>% 
+    distinct() %>% 
     saveRDS("data/current_ranks.rds")
 }
 update_ranks()

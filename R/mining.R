@@ -26,13 +26,11 @@ get_summoner_data <- function(name) {
 }
 # get_summoner_data("Jocar")
 
-jocar_puuid <- "PUVIXbSAf37rmqeF90dnVLSy_nKUCCWVjv1i4a2h_DciV25Wjr5vgiRVLDd4Wi-rQ_w-7cSsQhje6A"
-paintrain_puuid <- "ns6A_0BsSV7nKvhtK8bmEKK4gVy_2wUWPN2Joe2MQuzJnnA0zTU-nijiSqVWgRw-o2f-TOZ-eGoNNA"
-bigfish_puuid <- "KDpgUXKFafwS5CLMzit77xE-Zlin6Y6pLOUM_d8ZjFretTfwMDLa1OeissL9YhjxQySLQGuDbd_-4Q"
-locked_puuid <- "BZvNWALIu_0S1Ic69c9tEe2Sur7U_wxCasc8IfOZrTjFjH5rxohd8V3iGvNWuzuGeOCJBerTd9FWkg"
-blua_puuid <- "RfESDk2R3LJSBYsOIJVv4KCdwe6DV65QcQ9qt3jRzH8sROhs4-T8xtFEraFZgR4F5r30OedwOFbAMA"
-
-get_game_ids <- function(puuid) {
+get_game_ids <- function(name) {
+  
+  puuid <- get_summoner_data(name) %>% 
+    pull(puuid)
+  
   all_games <- NULL
   for (i in 1:10) {
     print((i-1)*100)
@@ -46,39 +44,10 @@ get_game_ids <- function(puuid) {
 }
 
 game_ids <- tibble(
-  name = c("Jocar", "Paintrain100", "BigFish84", "locked", "blua"),
-  puuids = c(jocar_puuid, paintrain_puuid, bigfish_puuid, locked_puuid, blua_puuid)
+  name = c("Jocar", "Paintrain100", "BigFish84", "locked", "blua")
 ) %>% 
-  rowwise() %>% 
-  mutate(game_ids = map(puuids, get_game_ids))
+  mutate(game_ids = map(name, get_game_ids))
 
-# source: https://github.com/karthik/rdrop2/pull/200/commits/4cbbdceac8f1e544cc5e0918ff695ede228bca2a
-# drop_read <- function (file,
-#                        dest = tempdir(),
-#                        dtoken = rdrop2:::get_dropbox_token(),
-#                        ...){
-#   localfile = paste0(dest, "/", basename(file))
-#   drop_download(file, localfile, overwrite = TRUE, dtoken = dtoken)
-#   
-#   ext <- strsplit(basename(file), split = "\\.")[[1]][-1]
-#   
-#   if(ext == "csv") {
-#     utils::read.csv(localfile, ...)
-#     
-#   }else if (ext == "xlsx" | ext == "xls"){
-#     
-#     readxl::read_excel(localfile, ...)
-#     
-#   } else if(ext == "rds" ){
-#     
-#     readRDS(localfile, ...)
-#     
-#   } else if (ext == "RData" | ext == "rdata" | ext == "RDATA" | ext == "rda") {
-#     
-#     load(localfile, envir = .GlobalEnv, ...)
-#   }
-#   
-# }
 game_file <- readr::read_rds("data/all_games.rds") %>% 
   mutate(game_id = paste0(platformId, "_", gameId))
 
@@ -93,11 +62,11 @@ new_games <- game_ids %>%
   ) %>% 
   pull(game_id)
 
-get_game_data <- function(game_id, api_key) {
+get_game_data <- function(game_id) {
   
   print(paste0("Fetching data from: ", game_id))
   
-  game_data <- paste0("https://europe.api.riotgames.com/lol/match/v5/matches/", game_id, "?api_key=", api_key) %>% 
+  game_data <- paste0("https://europe.api.riotgames.com/lol/match/v5/matches/", game_id, "?api_key=", key) %>% 
     fromJSON(simplifyVector = FALSE)
   
   data <- tibble(
@@ -115,33 +84,40 @@ get_game_data <- function(game_id, api_key) {
   
 }
 
-steps <- 100
-print(paste0("Process will take: ", ((seq(1, length(new_games), steps) %>% length() - 1) * 135 / 60), " minutes."))
-all_game_data <- NULL
-for (i in seq(1, length(new_games), steps)) {
-  print("Starting in 30 sec ...")
-  # Sys.sleep(30)
+get_games <- function(game_ids) {
   
-  while ((i %% steps) != 0) {
-    if (!is.na(new_games[i])) {
-      all_game_data[[i]] <- get_game_data(new_games[i], key)
-      i <- i + 1  
-    } else {
-      stop("Finished.")
-    }
+  game_ids <- unique(game_ids)
+  
+  steps <- 100
+  print(paste0("Process will take: ", ((seq(1, length(game_ids), steps) %>% length() - 1) * 135 / 60), " minutes."))
+  all_game_data <- NULL
+  
+  print("Starting in 30 sec ...")
+  Sys.sleep(30)
+  
+  stops <- seq(1, length(game_ids), steps)[-1]
+  if (length(stops) == 0) {
+    stops <- 0
   }
   
-  print("Schlafe 2min")
-  Sys.sleep(135) # in truth 2min 15sec
-}
+  for (i in seq_along(game_ids)) {
+    
+    if (!i %in% stops) {
+      all_game_data[[i]] <- get_game_data(game_ids[i])
+    } else {
+      print("Schlafe 2min")
+      Sys.sleep(135)
+      all_game_data[[i]] <- get_game_data(game_ids[i])
+    }
+    
+  }
 
-# token <- drop_auth()
-# saveRDS(token, file = "token.rds")
+  return(bind_rows(all_game_data))
+}
+all_game_data <- get_games(new_games)
 
 file_name <- paste0("data/all_games.rds")
 all_game_data %>% 
-  bind_rows() %>% 
   bind_rows(game_file) %>% 
   distinct() %>% 
   write_rds(., file = file_name)
-# drop_upload("data/all_games.rds", path = "my_lol")
