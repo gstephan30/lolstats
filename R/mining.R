@@ -21,12 +21,12 @@ get_summoner_data <- function(name) {
       names_from = key,
       values_from = json
     ) %>% 
-    type_convert() %>% 
+    type_convert(col_types = cols()) %>% 
     mutate(revisionDate = as.POSIXct(revisionDate/1000, origin="1970-01-01"))
 }
 # get_summoner_data("Jocar")
 
-get_game_ids <- function(name) {
+get_game_ids <- function(name, games_check = 1000) {
   
   puuid <- get_summoner_data(name) %>% 
     pull(puuid)
@@ -84,7 +84,7 @@ get_game_data <- function(game_id) {
   
 }
 
-get_games <- function(game_ids) {
+get_games <- function(game_ids, sleep = 120) {
   
   game_ids <- unique(game_ids)
   
@@ -92,8 +92,8 @@ get_games <- function(game_ids) {
   print(paste0("Process will take: ", ((seq(1, length(game_ids), steps) %>% length() - 1) * 135 / 60), " minutes."))
   all_game_data <- NULL
   
-  print("Starting in 30 sec ...")
-  Sys.sleep(30)
+  print(paste0("Starting in ", sleep, " sec ..."))
+  Sys.sleep(sleep)
   
   stops <- seq(1, length(game_ids), steps)[-1]
   if (length(stops) == 0) {

@@ -102,7 +102,7 @@ zeit_daten %>%
   ggplot(aes(week_day, perc, fill = summonerName)) +
   geom_col() +
   coord_polar() +
-  scale_y_continuous(labels = scales::percent_format()) +
+  scale_y_continuous(labels = scales::percent_format(), limits = c(-0.1, NA)) +
   facet_wrap(~summonerName) +
   scale_fill_manual(values = c("#003d5b", "#00798c", "#d1495b", "#edae49", "#f4a261"), guide = "none") +
   my_theme +
@@ -117,7 +117,7 @@ zeit_daten %>%
   ggplot(aes(stunde, perc, fill = summonerName)) +
   geom_col() +
   coord_polar() +
-  scale_y_continuous(labels = scales::percent_format()) +
+  scale_y_continuous(labels = scales::percent_format(), limits = c(-0.1, NA)) +
   scale_fill_manual(values = c("#003d5b", "#00798c", "#d1495b", "#edae49", "#f4a261"), guide = "none") +
   facet_wrap(~summonerName) +
   my_theme +
@@ -293,3 +293,27 @@ g_days + g_games +
 
 
 ```
+
+
+## Time played
+
+```{r}
+queue_json <- jsonlite::fromJSON("https://static.developer.riotgames.com/docs/lol/queues.json") %>% 
+  as_tibble()
+
+game_data %>% 
+  filter(gameDuration <= 10000) %>% 
+  filter(summonerName %in% c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua")) %>% 
+  select(queueId,  summonerName, gameDuration) %>% 
+  left_join(queue_json %>% select(queueId, description)) %>% 
+  count(description, summonerName, wt = gameDuration, name = "total_time_played") %>% 
+  
+  pivot_wider(names_from = summonerName, values_from = total_time_played, values_fill = 0) %>% 
+  janitor::adorn_totals() %>% 
+  mutate(across(where(is.numeric), function(x) as.period(as.duration(x)))) %>% 
+  knitr::kable(escape = FALSE, caption = "Time play per queue ID") 
+  
+  
+
+```
+

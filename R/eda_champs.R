@@ -3,8 +3,17 @@ library(dplyr)
 library(ggplot2)
 library(tidytext)
 library(tidyr)
+library(rvest)
 
-champs_json <- "http://ddragon.leagueoflegends.com/cdn/12.8.1/data/en_US/champion.json" %>% 
+source("R/mining.R")
+
+recent_champs_url <- "https://developer.riotgames.com/docs/lol#data-dragon_champions" %>% 
+  read_html() %>% 
+  html_elements("a") %>% 
+  html_attr("href") %>% 
+  .[grepl("champion.json", .)]
+
+champs_json <- recent_champs_url %>% 
   fromJSON(simplifyVector = FALSE)
 
 champion_list <- tibble(
