@@ -56,20 +56,22 @@ new_games <- game_ids %>%
   unnest(game_ids) %>% 
   distinct(game_ids) %>% 
   select(game_id = 1) %>% 
-  anti_join(
-    game_file %>% 
-      distinct(game_id)
-  ) %>% 
+  # anti_join(
+  #   game_file %>% 
+  #     distinct(game_id)
+  # ) %>% 
   pull(game_id)
 
 get_game_data <- function(game_id) {
+  
+  # game_id <- "EUW1_6133505836"
   
   print(paste0("Fetching data from: ", game_id))
   
   game_data <- paste0("https://europe.api.riotgames.com/lol/match/v5/matches/", game_id, "?api_key=", key) %>% 
     fromJSON(simplifyVector = FALSE)
   
-  data <- tibble(
+  data_check <- tibble(
     key = names(game_data),
     json_raw = game_data
   ) %>% 
@@ -77,8 +79,14 @@ get_game_data <- function(game_id) {
     unnest_wider(json_raw) %>% 
     unnest(participants) %>% 
     unnest_wider(participants) %>%
-    mutate(gameStartTimestamp = as.POSIXct(gameStartTimestamp/1000, origin="1970-01-01")) %>% 
-    select(gameMode, gameDuration, gameStartTimestamp, queueId, championName, kills, deaths, assists, lane, summonerName, summonerLevel, win, everything())
+    mutate(gameStartTimestamp = as.POSIXct(gameStartTimestamp/1000, origin="1970-01-01")) 
+  
+  if(any(data_check$gameId) != 0) {
+    data <- data_check |> 
+      select(gameMode, gameDuration, gameStartTimestamp, queueId, championName, kills, deaths, assists, lane, summonerName, summonerLevel, win, everything())
+  } else {
+    data <- NULL
+  }
   
   return(data)
   

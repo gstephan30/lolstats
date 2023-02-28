@@ -52,6 +52,126 @@ kda
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
+CLASSIC
+</td>
+<td style="text-align:left;">
+2023-01-21 00:52:26
+</td>
+<td style="text-align:left;">
+BigFish84
+</td>
+<td style="text-align:left;">
+Singed
+</td>
+<td style="text-align:left;">
+<span
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0.6
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+CLASSIC
+</td>
+<td style="text-align:left;">
+2023-01-21 00:19:11
+</td>
+<td style="text-align:left;">
+BigFish84
+</td>
+<td style="text-align:left;">
+Singed
+</td>
+<td style="text-align:left;">
+<span
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+1.2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ARAM
+</td>
+<td style="text-align:left;">
+2023-01-20 23:53:37
+</td>
+<td style="text-align:left;">
+BigFish84
+</td>
+<td style="text-align:left;">
+Karthus
+</td>
+<td style="text-align:left;">
+<span
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+29
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+2.9
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+CLASSIC
+</td>
+<td style="text-align:left;">
+2023-01-07 22:57:59
+</td>
+<td style="text-align:left;">
+BigFish84
+</td>
+<td style="text-align:left;">
+Singed
+</td>
+<td style="text-align:left;">
+<span
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+3.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 ARAM
 </td>
 <td style="text-align:left;">
@@ -78,126 +198,6 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 </td>
 <td style="text-align:right;">
 2.0
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ARAM
-</td>
-<td style="text-align:left;">
-2022-09-09 00:05:29
-</td>
-<td style="text-align:left;">
-BigFish84
-</td>
-<td style="text-align:left;">
-Nautilus
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-14
-</td>
-<td style="text-align:right;">
-10
-</td>
-<td style="text-align:right;">
-1.6
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-CLASSIC
-</td>
-<td style="text-align:left;">
-2022-09-08 23:21:32
-</td>
-<td style="text-align:left;">
-BigFish84
-</td>
-<td style="text-align:left;">
-Singed
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-17
-</td>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:right;">
-2.4
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-CLASSIC
-</td>
-<td style="text-align:left;">
-2022-09-08 22:52:35
-</td>
-<td style="text-align:left;">
-BigFish84
-</td>
-<td style="text-align:left;">
-Singed
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-6.0
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-CLASSIC
-</td>
-<td style="text-align:left;">
-2022-04-28 00:02:59
-</td>
-<td style="text-align:left;">
-BigFish84
-</td>
-<td style="text-align:left;">
-Singed
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-12
-</td>
-<td style="text-align:right;">
-12
-</td>
-<td style="text-align:right;">
-1.1
 </td>
 </tr>
 <tr grouplength="5">
@@ -210,43 +210,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 CLASSIC
 </td>
 <td style="text-align:left;">
-2022-09-29 19:43:26
+2023-02-27 20:25:04
 </td>
 <td style="text-align:left;">
 Blua
 </td>
 <td style="text-align:left;">
-Janna
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-0.2
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-CLASSIC
-</td>
-<td style="text-align:left;">
-2022-09-25 18:41:26
-</td>
-<td style="text-align:left;">
-Blua
-</td>
-<td style="text-align:left;">
-Janna
+Lulu
 </td>
 <td style="text-align:left;">
 <span
@@ -256,13 +226,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 2
 </td>
 <td style="text-align:right;">
-20
+17
 </td>
 <td style="text-align:right;">
-6
+3
 </td>
 <td style="text-align:right;">
-3.7
+6.3
 </td>
 </tr>
 <tr>
@@ -270,7 +240,37 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 CLASSIC
 </td>
 <td style="text-align:left;">
-2022-09-24 20:01:35
+2023-02-26 20:35:14
+</td>
+<td style="text-align:left;">
+Blua
+</td>
+<td style="text-align:left;">
+Nami
+</td>
+<td style="text-align:left;">
+<span
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+2.2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+CLASSIC
+</td>
+<td style="text-align:left;">
+2023-02-26 19:29:57
 </td>
 <td style="text-align:left;">
 Blua
@@ -283,16 +283,16 @@ Nami
 style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
 </td>
 <td style="text-align:right;">
-5
+1
 </td>
 <td style="text-align:right;">
-30
+18
 </td>
 <td style="text-align:right;">
-4
+2
 </td>
 <td style="text-align:right;">
-8.8
+9.5
 </td>
 </tr>
 <tr>
@@ -300,7 +300,37 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 CLASSIC
 </td>
 <td style="text-align:left;">
-2022-09-24 19:22:20
+2023-02-26 16:55:31
+</td>
+<td style="text-align:left;">
+Blua
+</td>
+<td style="text-align:left;">
+Lulu
+</td>
+<td style="text-align:left;">
+<span
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+2.2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+CLASSIC
+</td>
+<td style="text-align:left;">
+2023-02-26 14:25:34
 </td>
 <td style="text-align:left;">
 Blua
@@ -313,46 +343,16 @@ Janna
 style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
 </td>
 <td style="text-align:right;">
-0
+1
 </td>
 <td style="text-align:right;">
-15
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-5.0
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-CLASSIC
-</td>
-<td style="text-align:left;">
-2022-09-23 21:53:52
-</td>
-<td style="text-align:left;">
-Blua
-</td>
-<td style="text-align:left;">
-Sivir
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
-</td>
-<td style="text-align:right;">
-14
+8
 </td>
 <td style="text-align:right;">
 5
 </td>
 <td style="text-align:right;">
-13
-</td>
-<td style="text-align:right;">
-1.5
+1.8
 </td>
 </tr>
 <tr grouplength="5">
@@ -365,43 +365,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 ARAM
 </td>
 <td style="text-align:left;">
-2022-10-04 03:14:05
+2023-02-27 23:50:33
 </td>
 <td style="text-align:left;">
 Jocar
 </td>
 <td style="text-align:left;">
-Irelia
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
-</td>
-<td style="text-align:right;">
-13
-</td>
-<td style="text-align:right;">
-17
-</td>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:right;">
-5.0
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ARAM
-</td>
-<td style="text-align:left;">
-2022-10-04 02:51:00
-</td>
-<td style="text-align:left;">
-Jocar
-</td>
-<td style="text-align:left;">
-Katarina
+Tristana
 </td>
 <td style="text-align:left;">
 <span
@@ -411,13 +381,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 7
 </td>
 <td style="text-align:right;">
-27
+6
 </td>
 <td style="text-align:right;">
-5
+3
 </td>
 <td style="text-align:right;">
-6.8
+4.3
 </td>
 </tr>
 <tr>
@@ -425,26 +395,26 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 ARAM
 </td>
 <td style="text-align:left;">
-2022-10-04 02:23:28
+2023-02-27 23:29:43
 </td>
 <td style="text-align:left;">
 Jocar
 </td>
 <td style="text-align:left;">
-Tryndamere
+Kayle
 </td>
 <td style="text-align:left;">
 <span
 style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
 </td>
 <td style="text-align:right;">
-10
+5
 </td>
 <td style="text-align:right;">
-16
+24
 </td>
 <td style="text-align:right;">
-11
+12
 </td>
 <td style="text-align:right;">
 2.4
@@ -455,29 +425,29 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 ARAM
 </td>
 <td style="text-align:left;">
-2022-10-04 01:50:42
+2023-02-27 23:06:57
 </td>
 <td style="text-align:left;">
 Jocar
 </td>
 <td style="text-align:left;">
-Xerath
+Vayne
 </td>
 <td style="text-align:left;">
 <span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
 </td>
 <td style="text-align:right;">
-19
+8
 </td>
 <td style="text-align:right;">
-31
+13
 </td>
 <td style="text-align:right;">
-9
+6
 </td>
 <td style="text-align:right;">
-5.6
+3.5
 </td>
 </tr>
 <tr>
@@ -485,7 +455,37 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 ARAM
 </td>
 <td style="text-align:left;">
-2022-10-04 01:24:04
+2023-02-27 22:41:23
+</td>
+<td style="text-align:left;">
+Jocar
+</td>
+<td style="text-align:left;">
+Tristana
+</td>
+<td style="text-align:left;">
+<span
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+42
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+7.7
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ARAM
+</td>
+<td style="text-align:left;">
+2023-02-27 22:18:13
 </td>
 <td style="text-align:left;">
 Jocar
@@ -495,19 +495,19 @@ Jinx
 </td>
 <td style="text-align:left;">
 <span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
 </td>
 <td style="text-align:right;">
-17
+9
 </td>
 <td style="text-align:right;">
 16
 </td>
 <td style="text-align:right;">
-6
+8
 </td>
 <td style="text-align:right;">
-5.5
+3.1
 </td>
 </tr>
 <tr grouplength="5">
@@ -520,103 +520,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 CLASSIC
 </td>
 <td style="text-align:left;">
-2022-06-18 02:50:11
+2023-02-21 16:11:46
 </td>
 <td style="text-align:left;">
 locked
 </td>
 <td style="text-align:left;">
-Renata
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-22
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-7.7
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-CLASSIC
-</td>
-<td style="text-align:left;">
-2022-06-17 16:01:50
-</td>
-<td style="text-align:left;">
-locked
-</td>
-<td style="text-align:left;">
-Renata
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-19
-</td>
-<td style="text-align:right;">
-10
-</td>
-<td style="text-align:right;">
-2.0
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-CLASSIC
-</td>
-<td style="text-align:left;">
-2022-06-17 01:47:07
-</td>
-<td style="text-align:left;">
-locked
-</td>
-<td style="text-align:left;">
-Renata
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-12
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-4.7
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-CLASSIC
-</td>
-<td style="text-align:left;">
-2022-06-17 01:06:49
-</td>
-<td style="text-align:left;">
-locked
-</td>
-<td style="text-align:left;">
-Renata
+Janna
 </td>
 <td style="text-align:left;">
 <span
@@ -626,13 +536,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 0
 </td>
 <td style="text-align:right;">
-20
+6
 </td>
 <td style="text-align:right;">
-5
+7
 </td>
 <td style="text-align:right;">
-4.0
+0.9
 </td>
 </tr>
 <tr>
@@ -640,29 +550,119 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 ARAM
 </td>
 <td style="text-align:left;">
-2022-06-16 23:59:36
+2023-02-17 20:36:42
 </td>
 <td style="text-align:left;">
 locked
 </td>
 <td style="text-align:left;">
-Tristana
+Xayah
+</td>
+<td style="text-align:left;">
+<span
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+2.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ARAM
+</td>
+<td style="text-align:left;">
+2023-02-17 20:21:05
+</td>
+<td style="text-align:left;">
+locked
+</td>
+<td style="text-align:left;">
+Kaisa
+</td>
+<td style="text-align:left;">
+<span
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+3.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+URF
+</td>
+<td style="text-align:left;">
+2023-02-16 00:22:33
+</td>
+<td style="text-align:left;">
+locked
+</td>
+<td style="text-align:left;">
+Blitzcrank
 </td>
 <td style="text-align:left;">
 <span
 style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
 </td>
 <td style="text-align:right;">
-16
+3
 </td>
 <td style="text-align:right;">
-17
+8
 </td>
 <td style="text-align:right;">
-6
+7
 </td>
 <td style="text-align:right;">
-5.5
+1.6
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+URF
+</td>
+<td style="text-align:left;">
+2023-02-15 23:58:55
+</td>
+<td style="text-align:left;">
+locked
+</td>
+<td style="text-align:left;">
+Anivia
+</td>
+<td style="text-align:left;">
+<span
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+2.1
 </td>
 </tr>
 <tr grouplength="5">
@@ -672,16 +672,16 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ARAM
+CLASSIC
 </td>
 <td style="text-align:left;">
-2022-09-09 00:24:24
+2023-01-21 00:52:26
 </td>
 <td style="text-align:left;">
 Paintrain100
 </td>
 <td style="text-align:left;">
-MonkeyKing
+MissFortune
 </td>
 <td style="text-align:left;">
 <span
@@ -691,43 +691,13 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 6
 </td>
 <td style="text-align:right;">
-8
-</td>
-<td style="text-align:right;">
-8
-</td>
-<td style="text-align:right;">
-1.8
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ARAM
-</td>
-<td style="text-align:left;">
-2022-09-09 00:05:29
-</td>
-<td style="text-align:left;">
-Paintrain100
-</td>
-<td style="text-align:left;">
-Amumu
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
 13
 </td>
 <td style="text-align:right;">
 9
 </td>
 <td style="text-align:right;">
-1.9
+2.1
 </td>
 </tr>
 <tr>
@@ -735,7 +705,7 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 CLASSIC
 </td>
 <td style="text-align:left;">
-2022-09-08 23:21:32
+2023-01-21 00:19:11
 </td>
 <td style="text-align:left;">
 Paintrain100
@@ -746,66 +716,6 @@ MissFortune
 <td style="text-align:left;">
 <span
 style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-2.0
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-CLASSIC
-</td>
-<td style="text-align:left;">
-2022-09-08 22:52:35
-</td>
-<td style="text-align:left;">
-Paintrain100
-</td>
-<td style="text-align:left;">
-MissFortune
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-9.0
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ARAM
-</td>
-<td style="text-align:left;">
-2022-09-08 22:05:21
-</td>
-<td style="text-align:left;">
-Paintrain100
-</td>
-<td style="text-align:left;">
-Tristana
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
 </td>
 <td style="text-align:right;">
 8
@@ -814,10 +724,100 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 11
 </td>
 <td style="text-align:right;">
-11
+5
 </td>
 <td style="text-align:right;">
-1.7
+3.8
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ARAM
+</td>
+<td style="text-align:left;">
+2023-01-20 23:53:37
+</td>
+<td style="text-align:left;">
+Paintrain100
+</td>
+<td style="text-align:left;">
+MissFortune
+</td>
+<td style="text-align:left;">
+<span
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+30
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+5.6
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+CLASSIC
+</td>
+<td style="text-align:left;">
+2023-01-07 22:57:59
+</td>
+<td style="text-align:left;">
+Paintrain100
+</td>
+<td style="text-align:left;">
+MissFortune
+</td>
+<td style="text-align:left;">
+<span
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+13.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+ARAM
+</td>
+<td style="text-align:left;">
+2023-01-07 22:37:28
+</td>
+<td style="text-align:left;">
+Paintrain100
+</td>
+<td style="text-align:left;">
+Yasuo
+</td>
+<td style="text-align:left;">
+<span
+style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+1.4
 </td>
 </tr>
 </tbody>
@@ -859,19 +859,19 @@ Paintrain100
 5v5 ARAM games
 </td>
 <td style="text-align:right;">
-4H 55M 54S
+5H 14M 53S
 </td>
 <td style="text-align:right;">
 41M 38S
 </td>
 <td style="text-align:right;">
-2d 13H 41M 17S
+4d 12H 48M 11S
 </td>
 <td style="text-align:right;">
-14H 2M 50S
+1d 12H 59M 49S
 </td>
 <td style="text-align:right;">
-20H 31M 9S
+21H 6M 9S
 </td>
 </tr>
 <tr>
@@ -879,19 +879,19 @@ Paintrain100
 5v5 Blind Pick games
 </td>
 <td style="text-align:right;">
-3d 5H 54M 13S
+3d 6H 14M 43S
 </td>
 <td style="text-align:right;">
 58M 51S
 </td>
 <td style="text-align:right;">
-8d 14H 15M 50S
+2d 16H 15M 49S
 </td>
 <td style="text-align:right;">
-1H 47M 24S
+2H 36M 26S
 </td>
 <td style="text-align:right;">
-2d 20H 26M 37S
+2d 20H 47M 7S
 </td>
 </tr>
 <tr>
@@ -899,19 +899,19 @@ Paintrain100
 5v5 Draft Pick games
 </td>
 <td style="text-align:right;">
-1H 24M 59S
+2H 31M 19S
 </td>
 <td style="text-align:right;">
 28M 37S
 </td>
 <td style="text-align:right;">
-17H 30M 32S
+1d 23H 12M 46S
 </td>
 <td style="text-align:right;">
-8H 19M 34S
+12H 12M 5S
 </td>
 <td style="text-align:right;">
-1H 24M 59S
+2H 54M 30S
 </td>
 </tr>
 <tr>
@@ -942,13 +942,13 @@ Paintrain100
 0S
 </td>
 <td style="text-align:right;">
-3d 13H 54M 0S
+5d 9H 36M 47S
 </td>
 <td style="text-align:right;">
-6d 4H 8M 20S
+8d 21H 25M 2S
 </td>
 <td style="text-align:right;">
-9d 8H 20M 7S
+15d 15H 13M 38S
 </td>
 <td style="text-align:right;">
 5H 44M 50S
@@ -968,7 +968,7 @@ ARURF games
 30M 39S
 </td>
 <td style="text-align:right;">
-9H 15M 15S
+18H 10M 29S
 </td>
 <td style="text-align:right;">
 0S
@@ -1036,6 +1036,26 @@ One for All games
 </tr>
 <tr>
 <td style="text-align:left;">
+Pick URF games
+</td>
+<td style="text-align:right;">
+0S
+</td>
+<td style="text-align:right;">
+0S
+</td>
+<td style="text-align:right;">
+0S
+</td>
+<td style="text-align:right;">
+6H 52M 37S
+</td>
+<td style="text-align:right;">
+0S
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
 Tutorial 1
 </td>
 <td style="text-align:right;">
@@ -1045,7 +1065,7 @@ Tutorial 1
 0S
 </td>
 <td style="text-align:right;">
-24S
+0S
 </td>
 <td style="text-align:right;">
 24S
@@ -1099,19 +1119,19 @@ NA
 Total
 </td>
 <td style="text-align:right;">
-3d 15H 49M 48S
+3d 17H 35M 37S
 </td>
 <td style="text-align:right;">
-3d 17H 2M 34S
+5d 12H 45M 21S
 </td>
 <td style="text-align:right;">
-18d 6H 40M 34S
+18d 6H 45M 59S
 </td>
 <td style="text-align:right;">
-10d 19H 58M 53S
+18d 22H 18M 47S
 </td>
 <td style="text-align:right;">
-4d 3H 8M 9S
+4d 5H 33M 10S
 </td>
 </tr>
 </tbody>
