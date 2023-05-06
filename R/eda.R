@@ -437,3 +437,5 @@ read_rds("data/all_games.rds") %>% select(gameStartTimestamp, gameVersion) %>%
          data = .) %>% 
   filter(key == "patch") %>% 
   unnest(data)
+
+

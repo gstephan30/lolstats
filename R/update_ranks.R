@@ -27,7 +27,7 @@ update_ranks <- function() {
   }
   
   summoner <- tibble(
-    name = c("Jocar", "Paintrain100", "BigFish84", "locked", "blua"),
+    name = c("Jocar", "Paintrain100", "BigFish84", "locked", "blua", "DerApostel187"),
   )
   
   

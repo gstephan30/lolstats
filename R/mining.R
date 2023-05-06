@@ -26,13 +26,13 @@ get_summoner_data <- function(name) {
 }
 # get_summoner_data("Jocar")
 
-get_game_ids <- function(name, games_check = 1000) {
+get_game_ids <- function(name, games_check = 1500) {
   
   puuid <- get_summoner_data(name) %>% 
     pull(puuid)
   
   all_games <- NULL
-  for (i in 1:10) {
+  for (i in 1:(games_check/100)) {
     print((i-1)*100)
     all_games[[i]] <- paste0("https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/", puuid, "/ids?start=", (i-1)*100, "&count=100&api_key=", key) %>% 
       fromJSON() %>% 
@@ -44,7 +44,7 @@ get_game_ids <- function(name, games_check = 1000) {
 }
 
 game_ids <- tibble(
-  name = c("Jocar", "Paintrain100", "BigFish84", "locked", "blua")
+  name = c("Jocar", "Paintrain100", "BigFish84", "locked", "blua", "DerApostel187")
 ) %>% 
   mutate(game_ids = map(name, get_game_ids))
 
@@ -56,10 +56,10 @@ new_games <- game_ids %>%
   unnest(game_ids) %>% 
   distinct(game_ids) %>% 
   select(game_id = 1) %>% 
-  # anti_join(
-  #   game_file %>% 
-  #     distinct(game_id)
-  # ) %>% 
+  anti_join(
+    game_file %>%
+      distinct(game_id)
+  ) %>%
   pull(game_id)
 
 get_game_data <- function(game_id) {
