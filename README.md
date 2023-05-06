@@ -207,36 +207,6 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 </tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ARAM
-</td>
-<td style="text-align:left;">
-2023-04-25 22:41:22
-</td>
-<td style="text-align:left;">
-BigFish84
-</td>
-<td style="text-align:left;">
-Warwick
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
-</td>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:right;">
-2.3
-</td>
-</tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 CLASSIC
 </td>
 <td style="text-align:left;">
@@ -355,11 +325,6 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 4.6
 </td>
 </tr>
-<tr grouplength="5">
-<td colspan="9" style="border-bottom: 1px solid;">
-<strong>Jocar</strong>
-</td>
-</tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
 CLASSIC
@@ -390,34 +355,9 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 3.3
 </td>
 </tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-CLASSIC
-</td>
-<td style="text-align:left;">
-2023-04-30 23:27:18
-</td>
-<td style="text-align:left;">
-Blua
-</td>
-<td style="text-align:left;">
-Lulu
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-12
-</td>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:right;">
-2.0
+<tr grouplength="5">
+<td colspan="9" style="border-bottom: 1px solid;">
+<strong>Jocar</strong>
 </td>
 </tr>
 <tr>
@@ -510,11 +450,6 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 2.2
 </td>
 </tr>
-<tr grouplength="5">
-<td colspan="9" style="border-bottom: 1px solid;">
-<strong>locked</strong>
-</td>
-</tr>
 <tr>
 <td style="text-align:left;padding-left: 2em;" indentlevel="1">
 CLASSIC
@@ -575,34 +510,9 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 12.0
 </td>
 </tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-CLASSIC
-</td>
-<td style="text-align:left;">
-2023-05-05 11:16:11
-</td>
-<td style="text-align:left;">
-DerApostel187
-</td>
-<td style="text-align:left;">
-Katarina
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
-</td>
-<td style="text-align:right;">
-16
-</td>
-<td style="text-align:right;">
-10
-</td>
-<td style="text-align:right;">
-12
-</td>
-<td style="text-align:right;">
-2.2
+<tr grouplength="5">
+<td colspan="9" style="border-bottom: 1px solid;">
+<strong>locked</strong>
 </td>
 </tr>
 <tr>
@@ -663,11 +573,6 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 </td>
 <td style="text-align:right;">
 4.1
-</td>
-</tr>
-<tr grouplength="5">
-<td colspan="9" style="border-bottom: 1px solid;">
-<strong>Paintrain100</strong>
 </td>
 </tr>
 <tr>
@@ -760,34 +665,9 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 4.9
 </td>
 </tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-ARAM
-</td>
-<td style="text-align:left;">
-2023-05-03 23:39:23
-</td>
-<td style="text-align:left;">
-Jocar
-</td>
-<td style="text-align:left;">
-Tryndamere
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #DC143C !important;">FALSE</span>
-</td>
-<td style="text-align:right;">
-11
-</td>
-<td style="text-align:right;">
-11
-</td>
-<td style="text-align:right;">
-9
-</td>
-<td style="text-align:right;">
-2.4
+<tr grouplength="5">
+<td colspan="9" style="border-bottom: 1px solid;">
+<strong>Paintrain100</strong>
 </td>
 </tr>
 <tr>
@@ -818,11 +698,6 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 </td>
 <td style="text-align:right;">
 3.5
-</td>
-</tr>
-<tr grouplength="6">
-<td colspan="9" style="border-bottom: 1px solid;">
-<strong>DerApostel187</strong>
 </td>
 </tr>
 <tr>
@@ -945,34 +820,9 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 4.8
 </td>
 </tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-CLASSIC
-</td>
-<td style="text-align:left;">
-2023-03-28 16:10:36
-</td>
-<td style="text-align:left;">
-locked
-</td>
-<td style="text-align:left;">
-Lissandra
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
-</td>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-14.0
+<tr grouplength="5">
+<td colspan="9" style="border-bottom: 1px solid;">
+<strong>DerApostel187</strong>
 </td>
 </tr>
 <tr>
@@ -1006,7 +856,7 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 ARAM
 </td>
 <td style="text-align:left;">
@@ -1036,7 +886,7 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 CLASSIC
 </td>
 <td style="text-align:left;">
@@ -1066,7 +916,7 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 CLASSIC
 </td>
 <td style="text-align:left;">
@@ -1096,7 +946,7 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 </td>
 </tr>
 <tr>
-<td style="text-align:left;">
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
 CLASSIC
 </td>
 <td style="text-align:left;">
@@ -1123,36 +973,6 @@ style=" font-weight: bold;    color: white !important;border-radius: 4px; paddin
 </td>
 <td style="text-align:right;">
 1.7
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-CLASSIC
-</td>
-<td style="text-align:left;">
-2023-04-30 22:16:23
-</td>
-<td style="text-align:left;">
-Paintrain100
-</td>
-<td style="text-align:left;">
-MissFortune
-</td>
-<td style="text-align:left;">
-<span
-style=" font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: #3CB371 !important;">TRUE</span>
-</td>
-<td style="text-align:right;">
-9
-</td>
-<td style="text-align:right;">
-13
-</td>
-<td style="text-align:right;">
-9
-</td>
-<td style="text-align:right;">
-2.4
 </td>
 </tr>
 </tbody>
