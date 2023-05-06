@@ -243,7 +243,7 @@ game_data %>%
          kda = round((kills+assists)/(deaths_new), 1)) %>% 
   select(-deaths_new) %>% 
   knitr::kable(escape = FALSE, caption = "Last 5 games per Summoner") %>% 
-  pack_rows(index = c("BigFish84" = 5, "Blua" = 5, "Jocar" = 5, "locked" = 5, "Paintrain100" = 5, "DerApostel187" = 5))
+  pack_rows(index = c("BigFish84" = 5, "Blua" = 5, "DerApostel187" = 5, "Jocar" = 5, "locked" = 5, "Paintrain100" = 5))
 
 g_days <- game_data %>% 
   select(summonerName, gameStartTimestamp, contains("level")) %>% 
