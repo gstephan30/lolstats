@@ -77,12 +77,12 @@ get_game_data <- function(game_id) {
   ) %>% 
     filter(key == "info") %>% 
     unnest_wider(json_raw) %>% 
-    unnest(participants) %>% 
-    unnest_wider(participants) %>%
-    mutate(gameStartTimestamp = as.POSIXct(gameStartTimestamp/1000, origin="1970-01-01")) 
+    unnest(participants)
   
   if(any(data_check$gameId) != 0) {
-    data <- data_check |> 
+    data <- data_check  %>% 
+      unnest_wider(participants) %>%
+      mutate(gameStartTimestamp = as.POSIXct(gameStartTimestamp/1000, origin="1970-01-01")) |> 
       select(gameMode, gameDuration, gameStartTimestamp, queueId, championName, kills, deaths, assists, lane, summonerName, summonerLevel, win, everything())
   } else {
     data <- NULL
