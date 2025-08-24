@@ -1,0 +1,65 @@
+---
+title: "LoL Stats Report"
+author: "Auto-generated"
+date: "`r Sys.Date()`"
+output: github_document
+---
+
+# League of Legends Match Data Report
+
+This report summarizes the latest match data for all tracked summoners.
+
+```{r setup, include=FALSE}
+library(tidyverse)
+data <- read_csv('data/all_games_new.csv')
+```
+
+## Games per Summoner
+
+```{r games-per-summoner}
+data %>%
+  count(summonerName) %>%
+  ggplot(aes(x = reorder(summonerName, n), y = n, fill = summonerName)) +
+  geom_col(show.legend = FALSE) +
+  coord_flip() +
+  labs(title = "Games per Summoner", x = "Summoner", y = "Number of Games") +
+  theme_minimal()
+```
+
+## Win Rate by Summoner
+
+```{r winrate-by-summoner}
+data %>%
+  group_by(summonerName) %>%
+  summarise(games = n(), wins = sum(win, na.rm=TRUE), winrate = wins/games) %>%
+  ggplot(aes(x = reorder(summonerName, winrate), y = winrate, fill = summonerName)) +
+  geom_col(show.legend = FALSE) +
+  coord_flip() +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+  labs(title = "Win Rate by Summoner", x = "Summoner", y = "Win Rate") +
+  theme_minimal()
+```
+
+## Top Champions Played
+
+```{r top-champions}
+data %>%
+  count(championName, sort = TRUE) %>%
+  top_n(10, n) %>%
+  ggplot(aes(x = reorder(championName, n), y = n, fill = championName)) +
+  geom_col(show.legend = FALSE) +
+  coord_flip() +
+  labs(title = "Top 10 Champions Played", x = "Champion", y = "Games Played") +
+  theme_minimal()
+```
+
+## KDA Distribution
+
+```{r kda-distribution}
+data %>%
+  mutate(kda = (kills + assists) / pmax(1, deaths)) %>%
+  ggplot(aes(x = kda)) +
+  geom_histogram(bins = 30, fill = "#69b3a2", color = "white") +
+  labs(title = "KDA Distribution", x = "KDA", y = "Count") +
+  theme_minimal()
+```

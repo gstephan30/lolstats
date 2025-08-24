@@ -9,6 +9,8 @@ key <- Sys.getenv("api_key")
 source("R/update_ranks.R")
 get_summoner_data <- function(name) {
   
+  # name <- "Jocar"
+  
   json_url <- paste0("https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/", name, "?api_key=", key)
   
   tibble(
@@ -27,35 +29,45 @@ get_summoner_data <- function(name) {
 # get_summoner_data("Jocar")
 
 get_game_ids <- function(name, games_check = 1500) {
+
+  puuid <- read_rds("data/current_ranks.rds") |> 
+    pull(info_puuid) |> 
+    unique()
+    
+  # puuid <- get_summoner_data(name) %>% 
+  #   pull(puuid)
   
-  puuid <- get_summoner_data(name) %>% 
-    pull(puuid)
+  game_ids <- NULL
+  for (a in seq_along(puuid)) {
+    print(puuid[a])
+    
+    all_games <- NULL
+    for (i in 1:(games_check/100)) {
+      print((i-1)*100)
+      all_games[[i]] <- paste0("https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/", puuid[a], "/ids?start=", (i-1)*100, "&count=100&api_key=", key) %>% 
+        fromJSON() %>% 
+        as_tibble()
+    }  
+    game_ids[[a]] <- bind_rows(all_games) %>% pull(value)
+  }
   
-  all_games <- NULL
-  for (i in 1:(games_check/100)) {
-    print((i-1)*100)
-    all_games[[i]] <- paste0("https://europe.api.riotgames.com/lol/match/v5/matches/by-puuid/", puuid, "/ids?start=", (i-1)*100, "&count=100&api_key=", key) %>% 
-      fromJSON() %>% 
-      as_tibble()
-  }  
-  game_ids <- bind_rows(all_games) %>% pull(value)
   
   return(game_ids)
 }
 
-game_ids <- tibble(
-  name = c("Jocar", "Paintrain100", "BigFish84", "locked", "blua", "DerApostel187")
-) %>% 
-  mutate(game_ids = map(name, get_game_ids))
+game_ids_all <- get_game_ids()
 
 game_file <- readr::read_rds("data/all_games.rds") %>% 
   mutate(game_id = paste0(platformId, "_", gameId))
 
-new_games <- game_ids %>% 
-  ungroup() %>% 
-  unnest(game_ids) %>% 
-  distinct(game_ids) %>% 
-  select(game_id = 1) %>% 
+new_games <- game_ids_all %>% 
+  unlist() |> 
+  unique() |> 
+  # ungroup() %>% 
+  # unnest(game_ids) %>% 
+  # distinct(game_ids) %>% 
+  # select(game_id = 1) %>% 
+  tibble(game_id = _) |> 
   anti_join(
     game_file %>%
       distinct(game_id)
@@ -92,12 +104,12 @@ get_game_data <- function(game_id) {
   
 }
 
-get_games <- function(game_ids, sleep = 120) {
+get_games <- function(game_ids, sleep = 135) {
   
   game_ids <- unique(game_ids)
   
-  steps <- 100
-  print(paste0("Process will take: ", ((seq(1, length(game_ids), steps) %>% length() - 1) * 135 / 60), " minutes."))
+  steps <- 60
+  print(paste0("Process will take: ", ((seq(1, length(game_ids), steps) %>% length() - 1) * sleep / 60), " minutes."))
   all_game_data <- NULL
   
   print(paste0("Starting in ", sleep, " sec ..."))
@@ -113,8 +125,8 @@ get_games <- function(game_ids, sleep = 120) {
     if (!i %in% stops) {
       all_game_data[[i]] <- get_game_data(game_ids[i])
     } else {
-      print("Schlafe 2min")
-      Sys.sleep(135)
+      print(paste0("Schlafe ", round(sleep/60, 1), "min"))
+      Sys.sleep(sleep)
       all_game_data[[i]] <- get_game_data(game_ids[i])
     }
     
@@ -122,7 +134,8 @@ get_games <- function(game_ids, sleep = 120) {
 
   return(bind_rows(all_game_data))
 }
-all_game_data <- get_games(new_games)
+all_game_data <- get_games(new_games, sleep = 210)
+
 
 file_name <- paste0("data/all_games.rds")
 all_game_data %>% 
