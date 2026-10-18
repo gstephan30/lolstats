@@ -14,6 +14,8 @@ knitr::opts_chunk$set(
   warning = FALSE,
   dpi = 300
 )
+library(dplyr)
+game_data <- readr::read_rds("data/all_games.rds") %>% filter(!is.na(tracked_name))
 ```
 
 # LOL Exploration
@@ -21,7 +23,12 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of LOL Exploration is to ...
+Statistics of a small group of League of Legends players, built from the Riot
+match-v5 API (all queues). Games from `r format(min(game_data$gameStartTimestamp), "%Y-%m-%d")`
+to `r format(max(game_data$gameStartTimestamp), "%Y-%m-%d")`: `r n_distinct(game_data$matchId)` matches,
+`r nrow(game_data)` player-games.
+
+*This project is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc.*
 
 ```{r }
 library(ggplot2)
@@ -71,10 +78,14 @@ my_theme <- theme(strip.background =element_rect(fill="#30638e")) +
 # game_data <- drop_read("my_lol/all_games.rds")
 
 
-game_data <- readr::read_rds("data/all_games.rds")
+# built by R/build_all_games.R from the raw match-v5 files (local only, data/ is git-ignored)
+game_data <- readr::read_rds("data/all_games.rds") %>% 
+  filter(!is.na(tracked_name)) %>% 
+  mutate(summonerName = tracked_name)
 
-summoner_names <- c("Jocar", "Paintrain100", "BigFish84", "locked", "Blua", "DerApostel187")
-color_template <- c("#003d5b", "#00798c", "#d1495b", "#edae49", "#f4a261", "#7FC29B")
+summoner_names <- sort(unique(game_data$summonerName))
+color_template <- c("#003d5b", "#00798c", "#d1495b", "#edae49", "#f4a261", "#7FC29B", "#6d597a")[seq_along(summoner_names)]
+names(color_template) <- summoner_names
 
 game_data %>% 
   filter(summonerName %in% summoner_names) %>% 
@@ -220,8 +231,7 @@ box_data %>%
        y = NULL, 
        x = "KDA") 
   
-game_data %>% 
-  filter(summonerName %in% summoner_names) %>% 
+last_games <- game_data %>% 
   select(mode = gameMode, 
          time = gameStartTimestamp,
          summoner = summonerName,
@@ -230,20 +240,21 @@ game_data %>%
          kills, 
          assists,
          deaths) %>% 
+  arrange(summoner, desc(time)) %>% 
   group_by(summoner) %>% 
-  arrange(desc(time)) %>% 
   slice(1:5) %>% 
-  group_split(summoner) %>% 
-  bind_rows() %>% 
+  ungroup()
+
+last_games %>% 
   mutate(win = cell_spec(win, 
                          background = ifelse(win == TRUE, "#3CB371", "#DC143C"),
                                 bold = TRUE,
                                 color = "white")) %>% 
   mutate(deaths_new = ifelse(deaths == 0, 1, deaths),
          kda = round((kills+assists)/(deaths_new), 1)) %>% 
-  select(-deaths_new) %>% 
+  select(-deaths_new, -summoner) %>% 
   knitr::kable(escape = FALSE, caption = "Last 5 games per Summoner") %>% 
-  pack_rows(index = c("BigFish84" = 5, "Blua" = 5, "DerApostel187" = 5, "Jocar" = 5, "locked" = 5, "Paintrain100" = 5))
+  pack_rows(index = table(last_games$summoner))
 
 g_days <- game_data %>% 
   select(summonerName, gameStartTimestamp, contains("level")) %>% 
