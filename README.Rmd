@@ -246,14 +246,14 @@ last_games <- game_data %>%
   ungroup()
 
 last_games %>% 
-  mutate(win = cell_spec(win, 
+  mutate(win = cell_spec(win, format = "html",
                          background = ifelse(win == TRUE, "#3CB371", "#DC143C"),
                                 bold = TRUE,
                                 color = "white")) %>% 
   mutate(deaths_new = ifelse(deaths == 0, 1, deaths),
          kda = round((kills+assists)/(deaths_new), 1)) %>% 
   select(-deaths_new, -summoner) %>% 
-  knitr::kable(escape = FALSE, caption = "Last 5 games per Summoner") %>% 
+  knitr::kable(format = "html", escape = FALSE, caption = "Last 5 games per Summoner") %>% 
   pack_rows(index = table(last_games$summoner))
 
 g_days <- game_data %>% 

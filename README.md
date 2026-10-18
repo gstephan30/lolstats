@@ -8,8 +8,8 @@
 <!-- badges: end -->
 
 Statistics of a small group of League of Legends players, built from the
-Riot match-v5 API (all queues). Games from 2024-10-31 to 2026-10-16:
-2591 matches, 2677 player-games.
+Riot match-v5 API (all queues). Games from 2024-10-31 to 2026-10-18:
+2592 matches, 2678 player-games.
 
 *This project is not endorsed by Riot Games and does not reflect the
 views or opinions of Riot Games or anyone officially involved in
@@ -103,9 +103,7 @@ Anivia
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -149,9 +147,7 @@ Leblanc
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -195,9 +191,7 @@ Fizz
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -241,9 +235,7 @@ Jinx
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -287,9 +279,7 @@ MissFortune
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -342,9 +332,7 @@ Lulu
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -388,9 +376,7 @@ MasterYi
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -434,9 +420,7 @@ MasterYi
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -480,9 +464,7 @@ Renekton
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -526,9 +508,7 @@ Yone
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -581,9 +561,7 @@ Vex
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -627,9 +605,7 @@ Brand
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -673,9 +649,7 @@ Pyke
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -719,9 +693,7 @@ Senna
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -765,9 +737,7 @@ Zyra
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -810,6 +780,50 @@ ARAM
 
 <td style="text-align:left;">
 
+2026-10-18 16:48:29
+</td>
+
+<td style="text-align:left;">
+
+Warwick
+</td>
+
+<td style="text-align:left;">
+
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
+</td>
+
+<td style="text-align:right;">
+
+6
+</td>
+
+<td style="text-align:right;">
+
+3
+</td>
+
+<td style="text-align:right;">
+
+2
+</td>
+
+<td style="text-align:right;">
+
+4.5
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;padding-left: 2em;" indentlevel="1">
+
+ARAM
+</td>
+
+<td style="text-align:left;">
+
 2026-02-27 18:27:24
 </td>
 
@@ -820,9 +834,7 @@ Seraphine
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -866,9 +878,7 @@ Warwick
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -912,9 +922,7 @@ Lux
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -958,9 +966,7 @@ Brand
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -981,52 +987,6 @@ Brand
 <td style="text-align:right;">
 
 2.6
-</td>
-
-</tr>
-
-<tr>
-
-<td style="text-align:left;padding-left: 2em;" indentlevel="1">
-
-ARAM
-</td>
-
-<td style="text-align:left;">
-
-2026-02-22 22:11:48
-</td>
-
-<td style="text-align:left;">
-
-Xerath
-</td>
-
-<td style="text-align:left;">
-
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
-</td>
-
-<td style="text-align:right;">
-
-9
-</td>
-
-<td style="text-align:right;">
-
-32
-</td>
-
-<td style="text-align:right;">
-
-5
-</td>
-
-<td style="text-align:right;">
-
-8.2
 </td>
 
 </tr>
@@ -1059,9 +1019,7 @@ Varus
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1105,9 +1063,7 @@ Nidalee
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1151,9 +1107,7 @@ JarvanIV
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1197,9 +1151,7 @@ Alistar
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1243,9 +1195,7 @@ Nidalee
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1298,9 +1248,7 @@ Nami
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1344,9 +1292,7 @@ Janna
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1390,9 +1336,7 @@ Lulu
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1436,9 +1380,7 @@ Nami
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1482,9 +1424,7 @@ Janna
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1519,13 +1459,13 @@ Janna
 
 | description | Berrett21 | BigFish84 | Jesus | Jocar | Paintrain100 | blua |
 |:---|---:|---:|---:|---:|---:|---:|
-| 5v5 ARAM games | 8d 19H 30M 29S | 7H 0M 31S | 1d 7H 25M 29S | 6d 1H 19M 32S | 3d 14H 11M 2S | 0S |
+| 5v5 ARAM games | 8d 19H 30M 29S | 7H 0M 31S | 1d 7H 25M 29S | 6d 1H 28M 3S | 3d 14H 11M 2S | 0S |
 | 5v5 Draft Pick games | 0S | 0S | 4H 50M 7S | 52M 36S | 0S | 1H 57M 21S |
 | 5v5 Ranked Flex games | 0S | 0S | 0S | 0S | 0S | 1H 0M 34S |
 | 5v5 Ranked Solo games | 0S | 0S | 6d 0H 42M 19S | 3H 52M 1S | 0S | 6d 2H 11M 33S |
 | ARURF games | 4d 21H 30M 11S | 9M 48S | 2d 0H 57M 35S | 4H 23M 54S | 9M 48S | 0S |
 | Normal (Quickplay) | 0S | 0S | 0S | 15M 38S | 0S | 0S |
 | Swiftplay Games | 0S | 0S | 25M 40S | 1d 9H 13M 10S | 1H 47M 7S | 33M 35S |
-| Total | 13d 17H 0M 40S | 7H 10M 19S | 9d 14H 21M 10S | 7d 19H 56M 51S | 3d 16H 7M 57S | 6d 5H 43M 3S |
+| Total | 13d 17H 0M 40S | 7H 10M 19S | 9d 14H 21M 10S | 7d 20H 5M 22S | 3d 16H 7M 57S | 6d 5H 43M 3S |
 
 Time play per queue ID
