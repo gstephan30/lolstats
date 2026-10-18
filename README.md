@@ -103,9 +103,7 @@ Anivia
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -149,9 +147,7 @@ Leblanc
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -195,9 +191,7 @@ Fizz
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -241,9 +235,7 @@ Jinx
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -287,9 +279,7 @@ MissFortune
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -342,9 +332,7 @@ Lulu
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -388,9 +376,7 @@ MasterYi
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -434,9 +420,7 @@ MasterYi
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -480,9 +464,7 @@ Renekton
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -526,9 +508,7 @@ Yone
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -581,9 +561,7 @@ Vex
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -627,9 +605,7 @@ Brand
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -673,9 +649,7 @@ Pyke
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -719,9 +693,7 @@ Senna
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -765,9 +737,7 @@ Zyra
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -820,9 +790,7 @@ Seraphine
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -866,9 +834,7 @@ Warwick
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -912,9 +878,7 @@ Lux
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -958,9 +922,7 @@ Brand
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1004,9 +966,7 @@ Xerath
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1059,9 +1019,7 @@ Varus
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1105,9 +1063,7 @@ Nidalee
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1151,9 +1107,7 @@ JarvanIV
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1197,9 +1151,7 @@ Alistar
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1243,9 +1195,7 @@ Nidalee
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1298,9 +1248,7 @@ Nami
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1344,9 +1292,7 @@ Janna
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1390,9 +1336,7 @@ Lulu
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1436,9 +1380,7 @@ Nami
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220,
-20, 60, 1) !important;” \>FALSE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(220, 20, 60, 1) !important;">FALSE</span>
 </td>
 
 <td style="text-align:right;">
@@ -1482,9 +1424,7 @@ Janna
 
 <td style="text-align:left;">
 
-\<span style=“font-weight: bold; color: white !important;border-radius:
-4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60,
-179, 113, 1) !important;” \>TRUE\</span\>
+<span style="font-weight: bold;    color: white !important;border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(60, 179, 113, 1) !important;">TRUE</span>
 </td>
 
 <td style="text-align:right;">
